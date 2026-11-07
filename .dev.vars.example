@@ -1,0 +1,5 @@
+# Copy to .dev.vars for an authorized local end-to-end test with real push.
+APP_ORIGIN=http://127.0.0.1:8787
+VAPID_SUBJECT=
+VAPID_PUBLIC_KEY=
+VAPID_PRIVATE_KEY=

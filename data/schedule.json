@@ -1,0 +1,3558 @@
+{
+  "version": "1.0.0",
+  "updatedAt": "2026-11-05",
+  "source": "Calendário oficial · Turma 13461/2026.6",
+  "sourceSha256": "f8df4f6dd37c93bf7b2dbd4281ca839a5fa3412f3ca22f6cf6ee639a68a27c08",
+  "contract": {
+    "start": "2026-09-28",
+    "end": "2027-12-10"
+  },
+  "days": [
+    {
+      "date": "2026-09-28",
+      "original": "UC1- DESENVOLVIMENTO SOCIOEMOCIONAL",
+      "kind": "senac",
+      "title": "UC1 · Desenvolvimento socioemocional",
+      "ucCode": "UC1",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-09-29",
+      "original": "UC3- RECURSO TECNOLÓGICO",
+      "kind": "senac",
+      "title": "UC3 · Recurso tecnológico",
+      "ucCode": "UC3",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-09-30",
+      "original": "UC1- DESENVOLVIMENTO SOCIOEMOCIONAL",
+      "kind": "senac",
+      "title": "UC1 · Desenvolvimento socioemocional",
+      "ucCode": "UC1",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-10-01",
+      "original": "UC3- RECURSO TECNOLÓGICO",
+      "kind": "senac",
+      "title": "UC3 · Recurso tecnológico",
+      "ucCode": "UC3",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-10-02",
+      "original": "UC1- DESENVOLVIMENTO SOCIOEMOCIONAL",
+      "kind": "senac",
+      "title": "UC1 · Desenvolvimento socioemocional",
+      "ucCode": "UC1",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-10-03",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2026-10-04",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2026-10-05",
+      "original": "UC1- DESENVOLVIMENTO SOCIOEMOCIONAL",
+      "kind": "senac",
+      "title": "UC1 · Desenvolvimento socioemocional",
+      "ucCode": "UC1",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-10-06",
+      "original": "UC3- RECURSO TECNOLÓGICO",
+      "kind": "senac",
+      "title": "UC3 · Recurso tecnológico",
+      "ucCode": "UC3",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-10-07",
+      "original": "UC1- DESENVOLVIMENTO SOCIOEMOCIONAL",
+      "kind": "senac",
+      "title": "UC1 · Desenvolvimento socioemocional",
+      "ucCode": "UC1",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-10-08",
+      "original": "UC3- RECURSO TECNOLÓGICO",
+      "kind": "senac",
+      "title": "UC3 · Recurso tecnológico",
+      "ucCode": "UC3",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-10-09",
+      "original": "UC1- DESENVOLVIMENTO SOCIOEMOCIONAL",
+      "kind": "senac",
+      "title": "UC1 · Desenvolvimento socioemocional",
+      "ucCode": "UC1",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-10-10",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2026-10-11",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2026-10-12",
+      "original": "FERIADO: N.SRA.APARECIDA",
+      "kind": "holiday",
+      "title": "Nossa Senhora Aparecida"
+    },
+    {
+      "date": "2026-10-13",
+      "original": "UC3- RECURSO TECNOLÓGICO",
+      "kind": "senac",
+      "title": "UC3 · Recurso tecnológico",
+      "ucCode": "UC3",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-10-14",
+      "original": "UC1- DESENVOLVIMENTO SOCIOEMOCIONAL",
+      "kind": "senac",
+      "title": "UC1 · Desenvolvimento socioemocional",
+      "ucCode": "UC1",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-10-15",
+      "original": "UC3- RECURSO TECNOLÓGICO",
+      "kind": "senac",
+      "title": "UC3 · Recurso tecnológico",
+      "ucCode": "UC3",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-10-16",
+      "original": "UC6- LAB JUVENTUDE",
+      "kind": "senac",
+      "title": "UC6 · Laboratório Juventude",
+      "ucCode": "UC6",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-10-17",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2026-10-18",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2026-10-19",
+      "original": "UC1- DESENVOLVIMENTO SOCIOEMOCIONAL",
+      "kind": "senac",
+      "title": "UC1 · Desenvolvimento socioemocional",
+      "ucCode": "UC1",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-10-20",
+      "original": "ATIVIDADE PRÁTICA 1",
+      "kind": "hospital",
+      "title": "Atividade prática 1",
+      "activityNumber": 1,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-10-21",
+      "original": "ATIVIDADE PRÁTICA 2",
+      "kind": "hospital",
+      "title": "Atividade prática 2",
+      "activityNumber": 2,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-10-22",
+      "original": "ATIVIDADE PRÁTICA 3",
+      "kind": "hospital",
+      "title": "Atividade prática 3",
+      "activityNumber": 3,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-10-23",
+      "original": "UC1- DESENVOLVIMENTO SOCIOEMOCIONAL",
+      "kind": "senac",
+      "title": "UC1 · Desenvolvimento socioemocional",
+      "ucCode": "UC1",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-10-24",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2026-10-25",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2026-10-26",
+      "original": "UC1- DESENVOLVIMENTO SOCIOEMOCIONAL",
+      "kind": "senac",
+      "title": "UC1 · Desenvolvimento socioemocional",
+      "ucCode": "UC1",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-10-27",
+      "original": "ATIVIDADE PRÁTICA 4",
+      "kind": "hospital",
+      "title": "Atividade prática 4",
+      "activityNumber": 4,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-10-28",
+      "original": "ATIVIDADE PRÁTICA 5",
+      "kind": "hospital",
+      "title": "Atividade prática 5",
+      "activityNumber": 5,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-10-29",
+      "original": "ATIVIDADE PRÁTICA 6",
+      "kind": "hospital",
+      "title": "Atividade prática 6",
+      "activityNumber": 6,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-10-30",
+      "original": "UC1- DESENVOLVIMENTO SOCIOEMOCIONAL",
+      "kind": "senac",
+      "title": "UC1 · Desenvolvimento socioemocional",
+      "ucCode": "UC1",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-10-31",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2026-11-01",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2026-11-02",
+      "original": "FERIADO : FINADOS",
+      "kind": "holiday",
+      "title": "Finados"
+    },
+    {
+      "date": "2026-11-03",
+      "original": "ATIVIDADE PRÁTICA 7",
+      "kind": "hospital",
+      "title": "Atividade prática 7",
+      "activityNumber": 7,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-11-04",
+      "original": "ATIVIDADE PRÁTICA 8",
+      "kind": "hospital",
+      "title": "Atividade prática 8",
+      "activityNumber": 8,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-11-05",
+      "original": "ATIVIDADE PRÁTICA 9",
+      "kind": "hospital",
+      "title": "Atividade prática 9",
+      "activityNumber": 9,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-11-06",
+      "original": "UC2- BEM- ESTAR",
+      "kind": "senac",
+      "title": "UC2 · Bem-estar",
+      "ucCode": "UC2",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-11-07",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2026-11-08",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2026-11-09",
+      "original": "UC1- DESENVOLVIMENTO SOCIOEMOCIONAL",
+      "kind": "senac",
+      "title": "UC1 · Desenvolvimento socioemocional",
+      "ucCode": "UC1",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-11-10",
+      "original": "ATIVIDADE PRÁTICA 10",
+      "kind": "hospital",
+      "title": "Atividade prática 10",
+      "activityNumber": 10,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-11-11",
+      "original": "ATIVIDADE PRÁTICA 11",
+      "kind": "hospital",
+      "title": "Atividade prática 11",
+      "activityNumber": 11,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-11-12",
+      "original": "ATIVIDADE PRÁTICA 12",
+      "kind": "hospital",
+      "title": "Atividade prática 12",
+      "activityNumber": 12,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-11-13",
+      "original": "UC2- BEM- ESTAR",
+      "kind": "senac",
+      "title": "UC2 · Bem-estar",
+      "ucCode": "UC2",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-11-14",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2026-11-15",
+      "original": "FERIADO: PROCLAMAÇÃO DA REPUBLICA",
+      "kind": "holiday",
+      "title": "Proclamação da República"
+    },
+    {
+      "date": "2026-11-16",
+      "original": "UC6- LAB JUVENTUDE",
+      "kind": "senac",
+      "title": "UC6 · Laboratório Juventude",
+      "ucCode": "UC6",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-11-17",
+      "original": "ATIVIDADE PRÁTICA 13",
+      "kind": "hospital",
+      "title": "Atividade prática 13",
+      "activityNumber": 13,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-11-18",
+      "original": "ATIVIDADE PRÁTICA 14",
+      "kind": "hospital",
+      "title": "Atividade prática 14",
+      "activityNumber": 14,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-11-19",
+      "original": "ATIVIDADE PRÁTICA 15",
+      "kind": "hospital",
+      "title": "Atividade prática 15",
+      "activityNumber": 15,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-11-20",
+      "original": "FERIADO : CONSCIÊNCIA NEGRA",
+      "kind": "holiday",
+      "title": "Consciência Negra"
+    },
+    {
+      "date": "2026-11-21",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2026-11-22",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2026-11-23",
+      "original": "UC1- DESENVOLVIMENTO SOCIOEMOCIONAL",
+      "kind": "senac",
+      "title": "UC1 · Desenvolvimento socioemocional",
+      "ucCode": "UC1",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-11-24",
+      "original": "ATIVIDADE PRÁTICA 16",
+      "kind": "hospital",
+      "title": "Atividade prática 16",
+      "activityNumber": 16,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-11-25",
+      "original": "ATIVIDADE PRÁTICA 17",
+      "kind": "hospital",
+      "title": "Atividade prática 17",
+      "activityNumber": 17,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-11-26",
+      "original": "ATIVIDADE PRÁTICA 18",
+      "kind": "hospital",
+      "title": "Atividade prática 18",
+      "activityNumber": 18,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-11-27",
+      "original": "UC2- BEM- ESTAR",
+      "kind": "senac",
+      "title": "UC2 · Bem-estar",
+      "ucCode": "UC2",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-11-28",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2026-11-29",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2026-11-30",
+      "original": "UC1- DESENVOLVIMENTO SOCIOEMOCIONAL",
+      "kind": "senac",
+      "title": "UC1 · Desenvolvimento socioemocional",
+      "ucCode": "UC1",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-12-01",
+      "original": "ATIVIDADE PRÁTICA 19",
+      "kind": "hospital",
+      "title": "Atividade prática 19",
+      "activityNumber": 19,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-12-02",
+      "original": "ATIVIDADE PRÁTICA 20",
+      "kind": "hospital",
+      "title": "Atividade prática 20",
+      "activityNumber": 20,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-12-03",
+      "original": "ATIVIDADE PRÁTICA 21",
+      "kind": "hospital",
+      "title": "Atividade prática 21",
+      "activityNumber": 21,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-12-04",
+      "original": "UC2- BEM- ESTAR",
+      "kind": "senac",
+      "title": "UC2 · Bem-estar",
+      "ucCode": "UC2",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-12-05",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2026-12-06",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2026-12-07",
+      "original": "UC1- DESENVOLVIMENTO SOCIOEMOCIONAL",
+      "kind": "senac",
+      "title": "UC1 · Desenvolvimento socioemocional",
+      "ucCode": "UC1",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-12-08",
+      "original": "ATIVIDADE PRÁTICA 22",
+      "kind": "hospital",
+      "title": "Atividade prática 22",
+      "activityNumber": 22,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-12-09",
+      "original": "ATIVIDADE PRÁTICA 23",
+      "kind": "hospital",
+      "title": "Atividade prática 23",
+      "activityNumber": 23,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-12-10",
+      "original": "ATIVIDADE PRÁTICA 24",
+      "kind": "hospital",
+      "title": "Atividade prática 24",
+      "activityNumber": 24,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-12-11",
+      "original": "UC2- BEM- ESTAR",
+      "kind": "senac",
+      "title": "UC2 · Bem-estar",
+      "ucCode": "UC2",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-12-12",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2026-12-13",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2026-12-14",
+      "original": "UC7- ORGANIZAR E EXECUTAR ATIVIDADE DE APOIO",
+      "kind": "senac",
+      "title": "UC7 · Organizar e executar atividade de apoio",
+      "ucCode": "UC7",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-12-15",
+      "original": "ATIVIDADE PRÁTICA 25",
+      "kind": "hospital",
+      "title": "Atividade prática 25",
+      "activityNumber": 25,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-12-16",
+      "original": "ATIVIDADE PRÁTICA 26",
+      "kind": "hospital",
+      "title": "Atividade prática 26",
+      "activityNumber": 26,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-12-17",
+      "original": "ATIVIDADE PRÁTICA 27",
+      "kind": "hospital",
+      "title": "Atividade prática 27",
+      "activityNumber": 27,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-12-18",
+      "original": "ATIVIDADE PRÁTICA 28",
+      "kind": "hospital",
+      "title": "Atividade prática 28",
+      "activityNumber": 28,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-12-19",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2026-12-20",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2026-12-21",
+      "original": "ATIVIDADE PRÁTICA 29",
+      "kind": "hospital",
+      "title": "Atividade prática 29",
+      "activityNumber": 29,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-12-22",
+      "original": "ATIVIDADE PRÁTICA 30",
+      "kind": "hospital",
+      "title": "Atividade prática 30",
+      "activityNumber": 30,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-12-23",
+      "original": "ATIVIDADE PRÁTICA 31",
+      "kind": "hospital",
+      "title": "Atividade prática 31",
+      "activityNumber": 31,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-12-24",
+      "original": "ATIVIDADE PRÁTICA 32",
+      "kind": "hospital",
+      "title": "Atividade prática 32",
+      "activityNumber": 32,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-12-25",
+      "original": "NATAL",
+      "kind": "holiday",
+      "title": "Natal"
+    },
+    {
+      "date": "2026-12-26",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2026-12-27",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2026-12-28",
+      "original": "ATIVIDADE PRÁTICA 33",
+      "kind": "hospital",
+      "title": "Atividade prática 33",
+      "activityNumber": 33,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-12-29",
+      "original": "ATIVIDADE PRÁTICA 34",
+      "kind": "hospital",
+      "title": "Atividade prática 34",
+      "activityNumber": 34,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-12-30",
+      "original": "ATIVIDADE PRÁTICA 35",
+      "kind": "hospital",
+      "title": "Atividade prática 35",
+      "activityNumber": 35,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2026-12-31",
+      "original": "ATIVIDADE PRÁTICA 36",
+      "kind": "hospital",
+      "title": "Atividade prática 36",
+      "activityNumber": 36,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-01-01",
+      "original": "CONFRATERNIZAÇÃO UNIVERSAL",
+      "kind": "holiday",
+      "title": "Ano Novo"
+    },
+    {
+      "date": "2027-01-02",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-01-03",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-01-04",
+      "original": "UC7- ORGANIZAR E EXECUTAR ATIVIDADE DE APOIO",
+      "kind": "senac",
+      "title": "UC7 · Organizar e executar atividade de apoio",
+      "ucCode": "UC7",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-01-05",
+      "original": "ATIVIDADE PRÁTICA 37",
+      "kind": "hospital",
+      "title": "Atividade prática 37",
+      "activityNumber": 37,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-01-06",
+      "original": "ATIVIDADE PRÁTICA 38",
+      "kind": "hospital",
+      "title": "Atividade prática 38",
+      "activityNumber": 38,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-01-07",
+      "original": "ATIVIDADE PRÁTICA 39",
+      "kind": "hospital",
+      "title": "Atividade prática 39",
+      "activityNumber": 39,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-01-08",
+      "original": "UC4- LEITURA E COMPRRENSÃO",
+      "kind": "senac",
+      "title": "UC4 · Leitura e compreensão",
+      "ucCode": "UC4",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-01-09",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-01-10",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-01-11",
+      "original": "UC7- ORGANIZAR E EXECUTAR ATIVIDADE DE APOIO",
+      "kind": "senac",
+      "title": "UC7 · Organizar e executar atividade de apoio",
+      "ucCode": "UC7",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-01-12",
+      "original": "ATIVIDADE PRÁTICA 40",
+      "kind": "hospital",
+      "title": "Atividade prática 40",
+      "activityNumber": 40,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-01-13",
+      "original": "ATIVIDADE PRÁTICA 41",
+      "kind": "hospital",
+      "title": "Atividade prática 41",
+      "activityNumber": 41,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-01-14",
+      "original": "ATIVIDADE PRÁTICA 42",
+      "kind": "hospital",
+      "title": "Atividade prática 42",
+      "activityNumber": 42,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-01-15",
+      "original": "UC4- LEITURA E COMPRRENSÃO",
+      "kind": "senac",
+      "title": "UC4 · Leitura e compreensão",
+      "ucCode": "UC4",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-01-16",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-01-17",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-01-18",
+      "original": "UC7- ORGANIZAR E EXECUTAR ATIVIDADE DE APOIO",
+      "kind": "senac",
+      "title": "UC7 · Organizar e executar atividade de apoio",
+      "ucCode": "UC7",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-01-19",
+      "original": "ATIVIDADE PRÁTICA 43",
+      "kind": "hospital",
+      "title": "Atividade prática 43",
+      "activityNumber": 43,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-01-20",
+      "original": "ATIVIDADE PRÁTICA 44",
+      "kind": "hospital",
+      "title": "Atividade prática 44",
+      "activityNumber": 44,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-01-21",
+      "original": "ATIVIDADE PRÁTICA 45",
+      "kind": "hospital",
+      "title": "Atividade prática 45",
+      "activityNumber": 45,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-01-22",
+      "original": "UC4- LEITURA E COMPRRENSÃO",
+      "kind": "senac",
+      "title": "UC4 · Leitura e compreensão",
+      "ucCode": "UC4",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-01-23",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-01-24",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-01-25",
+      "original": "UC7- ORGANIZAR E EXECUTAR ATIVIDADE DE APOIO",
+      "kind": "senac",
+      "title": "UC7 · Organizar e executar atividade de apoio",
+      "ucCode": "UC7",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-01-26",
+      "original": "ATIVIDADE PRÁTICA 46",
+      "kind": "hospital",
+      "title": "Atividade prática 46",
+      "activityNumber": 46,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-01-27",
+      "original": "ATIVIDADE PRÁTICA 47",
+      "kind": "hospital",
+      "title": "Atividade prática 47",
+      "activityNumber": 47,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-01-28",
+      "original": "ATIVIDADE PRÁTICA 48",
+      "kind": "hospital",
+      "title": "Atividade prática 48",
+      "activityNumber": 48,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-01-29",
+      "original": "UC4- LEITURA E COMPRRENSÃO",
+      "kind": "senac",
+      "title": "UC4 · Leitura e compreensão",
+      "ucCode": "UC4",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-01-30",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-01-31",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-02-01",
+      "original": "UC7- ORGANIZAR E EXECUTAR ATIVIDADE DE APOIO",
+      "kind": "senac",
+      "title": "UC7 · Organizar e executar atividade de apoio",
+      "ucCode": "UC7",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-02-02",
+      "original": "ATIVIDADE PRÁTICA 49",
+      "kind": "hospital",
+      "title": "Atividade prática 49",
+      "activityNumber": 49,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-02-03",
+      "original": "ATIVIDADE PRÁTICA 50",
+      "kind": "hospital",
+      "title": "Atividade prática 50",
+      "activityNumber": 50,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-02-04",
+      "original": "ATIVIDADE PRÁTICA 51",
+      "kind": "hospital",
+      "title": "Atividade prática 51",
+      "activityNumber": 51,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-02-05",
+      "original": "UC6- LAB JUVENTUDE",
+      "kind": "senac",
+      "title": "UC6 · Laboratório Juventude",
+      "ucCode": "UC6",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-02-06",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-02-07",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-02-08",
+      "original": "ATIVIDADE PRÁTICA 52",
+      "kind": "hospital",
+      "title": "Atividade prática 52",
+      "activityNumber": 52,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-02-09",
+      "original": "CARNAVAL",
+      "kind": "holiday",
+      "title": "Carnaval"
+    },
+    {
+      "date": "2027-02-10",
+      "original": "ATIVIDADE PRÁTICA 53",
+      "kind": "hospital",
+      "title": "Atividade prática 53",
+      "activityNumber": 53,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-02-11",
+      "original": "ATIVIDADE PRÁTICA 54",
+      "kind": "hospital",
+      "title": "Atividade prática 54",
+      "activityNumber": 54,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-02-12",
+      "original": "ATIVIDADE PRÁTICA 55",
+      "kind": "hospital",
+      "title": "Atividade prática 55",
+      "activityNumber": 55,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-02-13",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-02-14",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-02-15",
+      "original": "UC7- ORGANIZAR E EXECUTAR ATIVIDADE DE APOIO",
+      "kind": "senac",
+      "title": "UC7 · Organizar e executar atividade de apoio",
+      "ucCode": "UC7",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-02-16",
+      "original": "ATIVIDADE PRÁTICA 56",
+      "kind": "hospital",
+      "title": "Atividade prática 56",
+      "activityNumber": 56,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-02-17",
+      "original": "ATIVIDADE PRÁTICA 57",
+      "kind": "hospital",
+      "title": "Atividade prática 57",
+      "activityNumber": 57,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-02-18",
+      "original": "ATIVIDADE PRÁTICA 58",
+      "kind": "hospital",
+      "title": "Atividade prática 58",
+      "activityNumber": 58,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-02-19",
+      "original": "UC4- LEITURA E COMPRRENSÃO",
+      "kind": "senac",
+      "title": "UC4 · Leitura e compreensão",
+      "ucCode": "UC4",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-02-20",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-02-21",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-02-22",
+      "original": "UC9- PI- ASSISTENTE ADMINISTRATIVO",
+      "kind": "senac",
+      "title": "UC9 · PI – Assistente administrativo",
+      "ucCode": "UC9",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-02-23",
+      "original": "ATIVIDADE PRÁTICA 59",
+      "kind": "hospital",
+      "title": "Atividade prática 59",
+      "activityNumber": 59,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-02-24",
+      "original": "ATIVIDADE PRÁTICA 60",
+      "kind": "hospital",
+      "title": "Atividade prática 60",
+      "activityNumber": 60,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-02-25",
+      "original": "ATIVIDADE PRÁTICA 61",
+      "kind": "hospital",
+      "title": "Atividade prática 61",
+      "activityNumber": 61,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-02-26",
+      "original": "UC4- LEITURA E COMPRRENSÃO",
+      "kind": "senac",
+      "title": "UC4 · Leitura e compreensão",
+      "ucCode": "UC4",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-02-27",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-02-28",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-03-01",
+      "original": "UC7- ORGANIZAR E EXECUTAR ATIVIDADE DE APOIO",
+      "kind": "senac",
+      "title": "UC7 · Organizar e executar atividade de apoio",
+      "ucCode": "UC7",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-03-02",
+      "original": "ATIVIDADE PRÁTICA 62",
+      "kind": "hospital",
+      "title": "Atividade prática 62",
+      "activityNumber": 62,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-03-03",
+      "original": "ATIVIDADE PRÁTICA 63",
+      "kind": "hospital",
+      "title": "Atividade prática 63",
+      "activityNumber": 63,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-03-04",
+      "original": "ATIVIDADE PRÁTICA 64",
+      "kind": "hospital",
+      "title": "Atividade prática 64",
+      "activityNumber": 64,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-03-05",
+      "original": "UC4- LEITURA E COMPRRENSÃO",
+      "kind": "senac",
+      "title": "UC4 · Leitura e compreensão",
+      "ucCode": "UC4",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-03-06",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-03-07",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-03-08",
+      "original": "UC7- ORGANIZAR E EXECUTAR ATIVIDADE DE APOIO",
+      "kind": "senac",
+      "title": "UC7 · Organizar e executar atividade de apoio",
+      "ucCode": "UC7",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-03-09",
+      "original": "ATIVIDADE PRÁTICA 65",
+      "kind": "hospital",
+      "title": "Atividade prática 65",
+      "activityNumber": 65,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-03-10",
+      "original": "ATIVIDADE PRÁTICA 66",
+      "kind": "hospital",
+      "title": "Atividade prática 66",
+      "activityNumber": 66,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-03-11",
+      "original": "ATIVIDADE PRÁTICA 67",
+      "kind": "hospital",
+      "title": "Atividade prática 67",
+      "activityNumber": 67,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-03-12",
+      "original": "UC5- LETRAMENTO MATEMÁTICO",
+      "kind": "senac",
+      "title": "UC5 · Letramento matemático",
+      "ucCode": "UC5",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-03-13",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-03-14",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-03-15",
+      "original": "UC7- ORGANIZAR E EXECUTAR ATIVIDADE DE APOIO",
+      "kind": "senac",
+      "title": "UC7 · Organizar e executar atividade de apoio",
+      "ucCode": "UC7",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-03-16",
+      "original": "ATIVIDADE PRÁTICA 68",
+      "kind": "hospital",
+      "title": "Atividade prática 68",
+      "activityNumber": 68,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-03-17",
+      "original": "ATIVIDADE PRÁTICA 69",
+      "kind": "hospital",
+      "title": "Atividade prática 69",
+      "activityNumber": 69,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-03-18",
+      "original": "ATIVIDADE PRÁTICA 70",
+      "kind": "hospital",
+      "title": "Atividade prática 70",
+      "activityNumber": 70,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-03-19",
+      "original": "UC5- LETRAMENTO MATEMÁTICO",
+      "kind": "senac",
+      "title": "UC5 · Letramento matemático",
+      "ucCode": "UC5",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-03-20",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-03-21",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-03-22",
+      "original": "UC7- ORGANIZAR E EXECUTAR ATIVIDADE DE APOIO",
+      "kind": "senac",
+      "title": "UC7 · Organizar e executar atividade de apoio",
+      "ucCode": "UC7",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-03-23",
+      "original": "ATIVIDADE PRÁTICA 71",
+      "kind": "hospital",
+      "title": "Atividade prática 71",
+      "activityNumber": 71,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-03-24",
+      "original": "ATIVIDADE PRÁTICA 72",
+      "kind": "hospital",
+      "title": "Atividade prática 72",
+      "activityNumber": 72,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-03-25",
+      "original": "ATIVIDADE PRÁTICA 73",
+      "kind": "hospital",
+      "title": "Atividade prática 73",
+      "activityNumber": 73,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-03-26",
+      "original": "SEXTA-FEIRA SANTA",
+      "kind": "holiday",
+      "title": "Sexta-feira Santa"
+    },
+    {
+      "date": "2027-03-27",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-03-28",
+      "original": "PÁSCOA",
+      "kind": "holiday",
+      "title": "Páscoa"
+    },
+    {
+      "date": "2027-03-29",
+      "original": "UC7- ORGANIZAR E EXECUTAR ATIVIDADE DE APOIO",
+      "kind": "senac",
+      "title": "UC7 · Organizar e executar atividade de apoio",
+      "ucCode": "UC7",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-03-30",
+      "original": "ATIVIDADE PRÁTICA 74",
+      "kind": "hospital",
+      "title": "Atividade prática 74",
+      "activityNumber": 74,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-03-31",
+      "original": "ATIVIDADE PRÁTICA 75",
+      "kind": "hospital",
+      "title": "Atividade prática 75",
+      "activityNumber": 75,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-04-01",
+      "original": "ATIVIDADE PRÁTICA 76",
+      "kind": "hospital",
+      "title": "Atividade prática 76",
+      "activityNumber": 76,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-04-02",
+      "original": "UC5- LETRAMENTO MATEMÁTICO",
+      "kind": "senac",
+      "title": "UC5 · Letramento matemático",
+      "ucCode": "UC5",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-04-03",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-04-04",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-04-05",
+      "original": "UC7- ORGANIZAR E EXECUTAR ATIVIDADE DE APOIO",
+      "kind": "senac",
+      "title": "UC7 · Organizar e executar atividade de apoio",
+      "ucCode": "UC7",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-04-06",
+      "original": "ATIVIDADE PRÁTICA 77",
+      "kind": "hospital",
+      "title": "Atividade prática 77",
+      "activityNumber": 77,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-04-07",
+      "original": "ATIVIDADE PRÁTICA 78",
+      "kind": "hospital",
+      "title": "Atividade prática 78",
+      "activityNumber": 78,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-04-08",
+      "original": "ATIVIDADE PRÁTICA 79",
+      "kind": "hospital",
+      "title": "Atividade prática 79",
+      "activityNumber": 79,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-04-09",
+      "original": "UC5- LETRAMENTO MATEMÁTICO",
+      "kind": "senac",
+      "title": "UC5 · Letramento matemático",
+      "ucCode": "UC5",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-04-10",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-04-11",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-04-12",
+      "original": "UC7- ORGANIZAR E EXECUTAR ATIVIDADE DE APOIO",
+      "kind": "senac",
+      "title": "UC7 · Organizar e executar atividade de apoio",
+      "ucCode": "UC7",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-04-13",
+      "original": "ATIVIDADE PRÁTICA 80",
+      "kind": "hospital",
+      "title": "Atividade prática 80",
+      "activityNumber": 80,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-04-14",
+      "original": "ATIVIDADE PRÁTICA 81",
+      "kind": "hospital",
+      "title": "Atividade prática 81",
+      "activityNumber": 81,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-04-15",
+      "original": "ATIVIDADE PRÁTICA 82",
+      "kind": "hospital",
+      "title": "Atividade prática 82",
+      "activityNumber": 82,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-04-16",
+      "original": "UC6- LAB JUVENTUDE",
+      "kind": "senac",
+      "title": "UC6 · Laboratório Juventude",
+      "ucCode": "UC6",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-04-17",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-04-18",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-04-19",
+      "original": "UC7- ORGANIZAR E EXECUTAR ATIVIDADE DE APOIO",
+      "kind": "senac",
+      "title": "UC7 · Organizar e executar atividade de apoio",
+      "ucCode": "UC7",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-04-20",
+      "original": "ATIVIDADE PRÁTICA 83",
+      "kind": "hospital",
+      "title": "Atividade prática 83",
+      "activityNumber": 83,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-04-21",
+      "original": "TIRADENTES",
+      "kind": "holiday",
+      "title": "Tiradentes"
+    },
+    {
+      "date": "2027-04-22",
+      "original": "ATIVIDADE PRÁTICA 84",
+      "kind": "hospital",
+      "title": "Atividade prática 84",
+      "activityNumber": 84,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-04-23",
+      "original": "SÃO JORGE",
+      "kind": "holiday",
+      "title": "São Jorge"
+    },
+    {
+      "date": "2027-04-24",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-04-25",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-04-26",
+      "original": "UC7- ORGANIZAR E EXECUTAR ATIVIDADE DE APOIO",
+      "kind": "senac",
+      "title": "UC7 · Organizar e executar atividade de apoio",
+      "ucCode": "UC7",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-04-27",
+      "original": "ATIVIDADE PRÁTICA 85",
+      "kind": "hospital",
+      "title": "Atividade prática 85",
+      "activityNumber": 85,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-04-28",
+      "original": "ATIVIDADE PRÁTICA 86",
+      "kind": "hospital",
+      "title": "Atividade prática 86",
+      "activityNumber": 86,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-04-29",
+      "original": "ATIVIDADE PRÁTICA 87",
+      "kind": "hospital",
+      "title": "Atividade prática 87",
+      "activityNumber": 87,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-04-30",
+      "original": "UC5- LETRAMENTO MATEMÁTICO",
+      "kind": "senac",
+      "title": "UC5 · Letramento matemático",
+      "ucCode": "UC5",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-05-01",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-05-02",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-05-03",
+      "original": "UC7- ORGANIZAR E EXECUTAR ATIVIDADE DE APOIO",
+      "kind": "senac",
+      "title": "UC7 · Organizar e executar atividade de apoio",
+      "ucCode": "UC7",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-05-04",
+      "original": "ATIVIDADE PRÁTICA 88",
+      "kind": "hospital",
+      "title": "Atividade prática 88",
+      "activityNumber": 88,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-05-05",
+      "original": "ATIVIDADE PRÁTICA 89",
+      "kind": "hospital",
+      "title": "Atividade prática 89",
+      "activityNumber": 89,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-05-06",
+      "original": "ATIVIDADE PRÁTICA 90",
+      "kind": "hospital",
+      "title": "Atividade prática 90",
+      "activityNumber": 90,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-05-07",
+      "original": "UC5- LETRAMENTO MATEMÁTICO",
+      "kind": "senac",
+      "title": "UC5 · Letramento matemático",
+      "ucCode": "UC5",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-05-08",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-05-09",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-05-10",
+      "original": "UC7- ORGANIZAR E EXECUTAR ATIVIDADE DE APOIO",
+      "kind": "senac",
+      "title": "UC7 · Organizar e executar atividade de apoio",
+      "ucCode": "UC7",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-05-11",
+      "original": "ATIVIDADE PRÁTICA 91",
+      "kind": "hospital",
+      "title": "Atividade prática 91",
+      "activityNumber": 91,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-05-12",
+      "original": "ATIVIDADE PRÁTICA 92",
+      "kind": "hospital",
+      "title": "Atividade prática 92",
+      "activityNumber": 92,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-05-13",
+      "original": "ATIVIDADE PRÁTICA 93",
+      "kind": "hospital",
+      "title": "Atividade prática 93",
+      "activityNumber": 93,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-05-14",
+      "original": "UC5- LETRAMENTO MATEMÁTICO",
+      "kind": "senac",
+      "title": "UC5 · Letramento matemático",
+      "ucCode": "UC5",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-05-15",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-05-16",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-05-17",
+      "original": "UC7- ORGANIZAR E EXECUTAR ATIVIDADE DE APOIO",
+      "kind": "senac",
+      "title": "UC7 · Organizar e executar atividade de apoio",
+      "ucCode": "UC7",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-05-18",
+      "original": "ATIVIDADE PRÁTICA 94",
+      "kind": "hospital",
+      "title": "Atividade prática 94",
+      "activityNumber": 94,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-05-19",
+      "original": "ATIVIDADE PRÁTICA 95",
+      "kind": "hospital",
+      "title": "Atividade prática 95",
+      "activityNumber": 95,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-05-20",
+      "original": "ATIVIDADE PRÁTICA 96",
+      "kind": "hospital",
+      "title": "Atividade prática 96",
+      "activityNumber": 96,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-05-21",
+      "original": "UC8- ELABORAR, ORGANIZAR E CONTROLAR",
+      "kind": "senac",
+      "title": "UC8 · Elaborar, organizar e controlar",
+      "ucCode": "UC8",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-05-22",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-05-23",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-05-24",
+      "original": "UC7- ORGANIZAR E EXECUTAR ATIVIDADE DE APOIO",
+      "kind": "senac",
+      "title": "UC7 · Organizar e executar atividade de apoio",
+      "ucCode": "UC7",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-05-25",
+      "original": "ATIVIDADE PRÁTICA 97",
+      "kind": "hospital",
+      "title": "Atividade prática 97",
+      "activityNumber": 97,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-05-26",
+      "original": "ATIVIDADE PRÁTICA 98",
+      "kind": "hospital",
+      "title": "Atividade prática 98",
+      "activityNumber": 98,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-05-27",
+      "original": "FERIADO : CORPUS CHRISTI",
+      "kind": "holiday",
+      "title": "Corpus Christi"
+    },
+    {
+      "date": "2027-05-28",
+      "original": "ATIVIDADE PRÁTICA 99",
+      "kind": "hospital",
+      "title": "Atividade prática 99",
+      "activityNumber": 99,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-05-29",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-05-30",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-05-31",
+      "original": "UC7- ORGANIZAR E EXECUTAR ATIVIDADE DE APOIO",
+      "kind": "senac",
+      "title": "UC7 · Organizar e executar atividade de apoio",
+      "ucCode": "UC7",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-06-01",
+      "original": "ATIVIDADE PRÁTICA 100",
+      "kind": "hospital",
+      "title": "Atividade prática 100",
+      "activityNumber": 100,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-06-02",
+      "original": "ATIVIDADE PRÁTICA 101",
+      "kind": "hospital",
+      "title": "Atividade prática 101",
+      "activityNumber": 101,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-06-03",
+      "original": "ATIVIDADE PRÁTICA 102",
+      "kind": "hospital",
+      "title": "Atividade prática 102",
+      "activityNumber": 102,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-06-04",
+      "original": "UC8- ELABORAR, ORGANIZAR E CONTROLAR",
+      "kind": "senac",
+      "title": "UC8 · Elaborar, organizar e controlar",
+      "ucCode": "UC8",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-06-05",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-06-06",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-06-07",
+      "original": "UC8- ELABORAR, ORGANIZAR E CONTROLAR",
+      "kind": "senac",
+      "title": "UC8 · Elaborar, organizar e controlar",
+      "ucCode": "UC8",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-06-08",
+      "original": "ATIVIDADE PRÁTICA 103",
+      "kind": "hospital",
+      "title": "Atividade prática 103",
+      "activityNumber": 103,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-06-09",
+      "original": "ATIVIDADE PRÁTICA 104",
+      "kind": "hospital",
+      "title": "Atividade prática 104",
+      "activityNumber": 104,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-06-10",
+      "original": "ATIVIDADE PRÁTICA 105",
+      "kind": "hospital",
+      "title": "Atividade prática 105",
+      "activityNumber": 105,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-06-11",
+      "original": "UC8- ELABORAR, ORGANIZAR E CONTROLAR",
+      "kind": "senac",
+      "title": "UC8 · Elaborar, organizar e controlar",
+      "ucCode": "UC8",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-06-12",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-06-13",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-06-14",
+      "original": "UC8- ELABORAR, ORGANIZAR E CONTROLAR",
+      "kind": "senac",
+      "title": "UC8 · Elaborar, organizar e controlar",
+      "ucCode": "UC8",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-06-15",
+      "original": "ATIVIDADE PRÁTICA 106",
+      "kind": "hospital",
+      "title": "Atividade prática 106",
+      "activityNumber": 106,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-06-16",
+      "original": "ATIVIDADE PRÁTICA 107",
+      "kind": "hospital",
+      "title": "Atividade prática 107",
+      "activityNumber": 107,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-06-17",
+      "original": "ATIVIDADE PRÁTICA 108",
+      "kind": "hospital",
+      "title": "Atividade prática 108",
+      "activityNumber": 108,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-06-18",
+      "original": "UC6- LAB JUVENTUDE",
+      "kind": "senac",
+      "title": "UC6 · Laboratório Juventude",
+      "ucCode": "UC6",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-06-19",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-06-20",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-06-21",
+      "original": "UC8- ELABORAR, ORGANIZAR E CONTROLAR",
+      "kind": "senac",
+      "title": "UC8 · Elaborar, organizar e controlar",
+      "ucCode": "UC8",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-06-22",
+      "original": "ATIVIDADE PRÁTICA 109",
+      "kind": "hospital",
+      "title": "Atividade prática 109",
+      "activityNumber": 109,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-06-23",
+      "original": "ATIVIDADE PRÁTICA 110",
+      "kind": "hospital",
+      "title": "Atividade prática 110",
+      "activityNumber": 110,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-06-24",
+      "original": "FERIADO : SÃO JOÃO BATISTA",
+      "kind": "holiday",
+      "title": "São João Batista"
+    },
+    {
+      "date": "2027-06-25",
+      "original": "ATIVIDADE PRÁTICA 111",
+      "kind": "hospital",
+      "title": "Atividade prática 111",
+      "activityNumber": 111,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-06-26",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-06-27",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-06-28",
+      "original": "UC8- ELABORAR, ORGANIZAR E CONTROLAR",
+      "kind": "senac",
+      "title": "UC8 · Elaborar, organizar e controlar",
+      "ucCode": "UC8",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-06-29",
+      "original": "ATIVIDADE PRÁTICA 112",
+      "kind": "hospital",
+      "title": "Atividade prática 112",
+      "activityNumber": 112,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-06-30",
+      "original": "ATIVIDADE PRÁTICA 113",
+      "kind": "hospital",
+      "title": "Atividade prática 113",
+      "activityNumber": 113,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-07-01",
+      "original": "ATIVIDADE PRÁTICA 114",
+      "kind": "hospital",
+      "title": "Atividade prática 114",
+      "activityNumber": 114,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-07-02",
+      "original": "UC8- ELABORAR, ORGANIZAR E CONTROLAR",
+      "kind": "senac",
+      "title": "UC8 · Elaborar, organizar e controlar",
+      "ucCode": "UC8",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-07-03",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-07-04",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-07-05",
+      "original": "UC8- ELABORAR, ORGANIZAR E CONTROLAR",
+      "kind": "senac",
+      "title": "UC8 · Elaborar, organizar e controlar",
+      "ucCode": "UC8",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-07-06",
+      "original": "ATIVIDADE PRÁTICA 115",
+      "kind": "hospital",
+      "title": "Atividade prática 115",
+      "activityNumber": 115,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-07-07",
+      "original": "ATIVIDADE PRÁTICA 116",
+      "kind": "hospital",
+      "title": "Atividade prática 116",
+      "activityNumber": 116,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-07-08",
+      "original": "ATIVIDADE PRÁTICA 117",
+      "kind": "hospital",
+      "title": "Atividade prática 117",
+      "activityNumber": 117,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-07-09",
+      "original": "UC8- ELABORAR, ORGANIZAR E CONTROLAR",
+      "kind": "senac",
+      "title": "UC8 · Elaborar, organizar e controlar",
+      "ucCode": "UC8",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-07-10",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-07-11",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-07-12",
+      "original": "UC8- ELABORAR, ORGANIZAR E CONTROLAR",
+      "kind": "senac",
+      "title": "UC8 · Elaborar, organizar e controlar",
+      "ucCode": "UC8",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-07-13",
+      "original": "ATIVIDADE PRÁTICA 118",
+      "kind": "hospital",
+      "title": "Atividade prática 118",
+      "activityNumber": 118,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-07-14",
+      "original": "ATIVIDADE PRÁTICA 119",
+      "kind": "hospital",
+      "title": "Atividade prática 119",
+      "activityNumber": 119,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-07-15",
+      "original": "ATIVIDADE PRÁTICA 120",
+      "kind": "hospital",
+      "title": "Atividade prática 120",
+      "activityNumber": 120,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-07-16",
+      "original": "UC8- ELABORAR, ORGANIZAR E CONTROLAR",
+      "kind": "senac",
+      "title": "UC8 · Elaborar, organizar e controlar",
+      "ucCode": "UC8",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-07-17",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-07-18",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-07-19",
+      "original": "ATIVIDADE PRÁTICA 121",
+      "kind": "hospital",
+      "title": "Atividade prática 121",
+      "activityNumber": 121,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-07-20",
+      "original": "ATIVIDADE PRÁTICA 122",
+      "kind": "hospital",
+      "title": "Atividade prática 122",
+      "activityNumber": 122,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-07-21",
+      "original": "ATIVIDADE PRÁTICA 123",
+      "kind": "hospital",
+      "title": "Atividade prática 123",
+      "activityNumber": 123,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-07-22",
+      "original": "ATIVIDADE PRÁTICA 124",
+      "kind": "hospital",
+      "title": "Atividade prática 124",
+      "activityNumber": 124,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-07-23",
+      "original": "ATIVIDADE PRÁTICA 125",
+      "kind": "hospital",
+      "title": "Atividade prática 125",
+      "activityNumber": 125,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-07-24",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-07-25",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-07-26",
+      "original": "ATIVIDADE PRÁTICA 126",
+      "kind": "hospital",
+      "title": "Atividade prática 126",
+      "activityNumber": 126,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-07-27",
+      "original": "ATIVIDADE PRÁTICA 127",
+      "kind": "hospital",
+      "title": "Atividade prática 127",
+      "activityNumber": 127,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-07-28",
+      "original": "ATIVIDADE PRÁTICA 128",
+      "kind": "hospital",
+      "title": "Atividade prática 128",
+      "activityNumber": 128,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-07-29",
+      "original": "ATIVIDADE PRÁTICA 129",
+      "kind": "hospital",
+      "title": "Atividade prática 129",
+      "activityNumber": 129,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-07-30",
+      "original": "ATIVIDADE PRÁTICA 130",
+      "kind": "hospital",
+      "title": "Atividade prática 130",
+      "activityNumber": 130,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-07-31",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-08-01",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-08-02",
+      "original": "UC9- PI- ASSISTENTE ADMINISTRATIVO",
+      "kind": "senac",
+      "title": "UC9 · PI – Assistente administrativo",
+      "ucCode": "UC9",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-08-03",
+      "original": "ATIVIDADE PRÁTICA 131",
+      "kind": "hospital",
+      "title": "Atividade prática 131",
+      "activityNumber": 131,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-08-04",
+      "original": "ATIVIDADE PRÁTICA 132",
+      "kind": "hospital",
+      "title": "Atividade prática 132",
+      "activityNumber": 132,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-08-05",
+      "original": "ATIVIDADE PRÁTICA 133",
+      "kind": "hospital",
+      "title": "Atividade prática 133",
+      "activityNumber": 133,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-08-06",
+      "original": "UC9- PI- ASSISTENTE ADMINISTRATIVO",
+      "kind": "senac",
+      "title": "UC9 · PI – Assistente administrativo",
+      "ucCode": "UC9",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-08-07",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-08-08",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-08-09",
+      "original": "UC8- ELABORAR, ORGANIZAR E CONTROLAR",
+      "kind": "senac",
+      "title": "UC8 · Elaborar, organizar e controlar",
+      "ucCode": "UC8",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-08-10",
+      "original": "ATIVIDADE PRÁTICA 134",
+      "kind": "hospital",
+      "title": "Atividade prática 134",
+      "activityNumber": 134,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-08-11",
+      "original": "ATIVIDADE PRÁTICA 135",
+      "kind": "hospital",
+      "title": "Atividade prática 135",
+      "activityNumber": 135,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-08-12",
+      "original": "ATIVIDADE PRÁTICA 136",
+      "kind": "hospital",
+      "title": "Atividade prática 136",
+      "activityNumber": 136,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-08-13",
+      "original": "UC10- COMPRAS E ESTOQUE",
+      "kind": "senac",
+      "title": "UC10 · Compras e estoque",
+      "ucCode": "UC10",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-08-14",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-08-15",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-08-16",
+      "original": "UC8- ELABORAR, ORGANIZAR E CONTROLAR",
+      "kind": "senac",
+      "title": "UC8 · Elaborar, organizar e controlar",
+      "ucCode": "UC8",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-08-17",
+      "original": "ATIVIDADE PRÁTICA 137",
+      "kind": "hospital",
+      "title": "Atividade prática 137",
+      "activityNumber": 137,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-08-18",
+      "original": "ATIVIDADE PRÁTICA 138",
+      "kind": "hospital",
+      "title": "Atividade prática 138",
+      "activityNumber": 138,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-08-19",
+      "original": "ATIVIDADE PRÁTICA 139",
+      "kind": "hospital",
+      "title": "Atividade prática 139",
+      "activityNumber": 139,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-08-20",
+      "original": "UC10- COMPRAS E ESTOQUE",
+      "kind": "senac",
+      "title": "UC10 · Compras e estoque",
+      "ucCode": "UC10",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-08-21",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-08-22",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-08-23",
+      "original": "UC8- ELABORAR, ORGANIZAR E CONTROLAR",
+      "kind": "senac",
+      "title": "UC8 · Elaborar, organizar e controlar",
+      "ucCode": "UC8",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-08-24",
+      "original": "ATIVIDADE PRÁTICA 140",
+      "kind": "hospital",
+      "title": "Atividade prática 140",
+      "activityNumber": 140,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-08-25",
+      "original": "ATIVIDADE PRÁTICA 141",
+      "kind": "hospital",
+      "title": "Atividade prática 141",
+      "activityNumber": 141,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-08-26",
+      "original": "ATIVIDADE PRÁTICA 142",
+      "kind": "hospital",
+      "title": "Atividade prática 142",
+      "activityNumber": 142,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-08-27",
+      "original": "UC10- COMPRAS E ESTOQUE",
+      "kind": "senac",
+      "title": "UC10 · Compras e estoque",
+      "ucCode": "UC10",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-08-28",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-08-29",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-08-30",
+      "original": "UC11- ADMINISTRAÇÃO DE CONTAS A PAGAR",
+      "kind": "senac",
+      "title": "UC11 · Administração de contas a pagar",
+      "ucCode": "UC11",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-08-31",
+      "original": "ATIVIDADE PRÁTICA 143",
+      "kind": "hospital",
+      "title": "Atividade prática 143",
+      "activityNumber": 143,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-09-01",
+      "original": "ATIVIDADE PRÁTICA 144",
+      "kind": "hospital",
+      "title": "Atividade prática 144",
+      "activityNumber": 144,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-09-02",
+      "original": "ATIVIDADE PRÁTICA 145",
+      "kind": "hospital",
+      "title": "Atividade prática 145",
+      "activityNumber": 145,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-09-03",
+      "original": "UC10- COMPRAS E ESTOQUE",
+      "kind": "senac",
+      "title": "UC10 · Compras e estoque",
+      "ucCode": "UC10",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-09-04",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-09-05",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-09-06",
+      "original": "ATIVIDADE PRÁTICA 146",
+      "kind": "hospital",
+      "title": "Atividade prática 146",
+      "activityNumber": 146,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-09-07",
+      "original": "FERIADO: INDEPENDÊNCIA DO BRASIL",
+      "kind": "holiday",
+      "title": "Independência do Brasil"
+    },
+    {
+      "date": "2027-09-08",
+      "original": "ATIVIDADE PRÁTICA 147",
+      "kind": "hospital",
+      "title": "Atividade prática 147",
+      "activityNumber": 147,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-09-09",
+      "original": "ATIVIDADE PRÁTICA 148",
+      "kind": "hospital",
+      "title": "Atividade prática 148",
+      "activityNumber": 148,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-09-10",
+      "original": "UC10- COMPRAS E ESTOQUE",
+      "kind": "senac",
+      "title": "UC10 · Compras e estoque",
+      "ucCode": "UC10",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-09-11",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-09-12",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-09-13",
+      "original": "UC11- ADMINISTRAÇÃO DE CONTAS A PAGAR",
+      "kind": "senac",
+      "title": "UC11 · Administração de contas a pagar",
+      "ucCode": "UC11",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-09-14",
+      "original": "ATIVIDADE PRÁTICA 149",
+      "kind": "hospital",
+      "title": "Atividade prática 149",
+      "activityNumber": 149,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-09-15",
+      "original": "ATIVIDADE PRÁTICA 150",
+      "kind": "hospital",
+      "title": "Atividade prática 150",
+      "activityNumber": 150,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-09-16",
+      "original": "ATIVIDADE PRÁTICA 151",
+      "kind": "hospital",
+      "title": "Atividade prática 151",
+      "activityNumber": 151,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-09-17",
+      "original": "UC10- COMPRAS E ESTOQUE",
+      "kind": "senac",
+      "title": "UC10 · Compras e estoque",
+      "ucCode": "UC10",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-09-18",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-09-19",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-09-20",
+      "original": "UC11- ADMINISTRAÇÃO DE CONTAS A PAGAR",
+      "kind": "senac",
+      "title": "UC11 · Administração de contas a pagar",
+      "ucCode": "UC11",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-09-21",
+      "original": "ATIVIDADE PRÁTICA 152",
+      "kind": "hospital",
+      "title": "Atividade prática 152",
+      "activityNumber": 152,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-09-22",
+      "original": "ATIVIDADE PRÁTICA 153",
+      "kind": "hospital",
+      "title": "Atividade prática 153",
+      "activityNumber": 153,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-09-23",
+      "original": "ATIVIDADE PRÁTICA 154",
+      "kind": "hospital",
+      "title": "Atividade prática 154",
+      "activityNumber": 154,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-09-24",
+      "original": "UC10- COMPRAS E ESTOQUE",
+      "kind": "senac",
+      "title": "UC10 · Compras e estoque",
+      "ucCode": "UC10",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-09-25",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-09-26",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-09-27",
+      "original": "UC11- ADMINISTRAÇÃO DE CONTAS A PAGAR",
+      "kind": "senac",
+      "title": "UC11 · Administração de contas a pagar",
+      "ucCode": "UC11",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-09-28",
+      "original": "ATIVIDADE PRÁTICA 155",
+      "kind": "hospital",
+      "title": "Atividade prática 155",
+      "activityNumber": 155,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-09-29",
+      "original": "ATIVIDADE PRÁTICA 156",
+      "kind": "hospital",
+      "title": "Atividade prática 156",
+      "activityNumber": 156,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-09-30",
+      "original": "ATIVIDADE PRÁTICA 157",
+      "kind": "hospital",
+      "title": "Atividade prática 157",
+      "activityNumber": 157,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-10-01",
+      "original": "UC10- COMPRAS E ESTOQUE",
+      "kind": "senac",
+      "title": "UC10 · Compras e estoque",
+      "ucCode": "UC10",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-10-02",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-10-03",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-10-04",
+      "original": "UC11- ADMINISTRAÇÃO DE CONTAS A PAGAR",
+      "kind": "senac",
+      "title": "UC11 · Administração de contas a pagar",
+      "ucCode": "UC11",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-10-05",
+      "original": "ATIVIDADE PRÁTICA 158",
+      "kind": "hospital",
+      "title": "Atividade prática 158",
+      "activityNumber": 158,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-10-06",
+      "original": "ATIVIDADE PRÁTICA 159",
+      "kind": "hospital",
+      "title": "Atividade prática 159",
+      "activityNumber": 159,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-10-07",
+      "original": "ATIVIDADE PRÁTICA 160",
+      "kind": "hospital",
+      "title": "Atividade prática 160",
+      "activityNumber": 160,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-10-08",
+      "original": "ATIVIDADE PRÁTICA 161",
+      "kind": "hospital",
+      "title": "Atividade prática 161",
+      "activityNumber": 161,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-10-09",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-10-10",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-10-11",
+      "original": "ATIVIDADE PRÁTICA 162",
+      "kind": "hospital",
+      "title": "Atividade prática 162",
+      "activityNumber": 162,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-10-12",
+      "original": "FERIADO: N.SRA.APARECIDA",
+      "kind": "holiday",
+      "title": "Nossa Senhora Aparecida"
+    },
+    {
+      "date": "2027-10-13",
+      "original": "ATIVIDADE PRÁTICA 163",
+      "kind": "hospital",
+      "title": "Atividade prática 163",
+      "activityNumber": 163,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-10-14",
+      "original": "ATIVIDADE PRÁTICA 164",
+      "kind": "hospital",
+      "title": "Atividade prática 164",
+      "activityNumber": 164,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-10-15",
+      "original": "ATIVIDADE PRÁTICA 165",
+      "kind": "hospital",
+      "title": "Atividade prática 165",
+      "activityNumber": 165,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-10-16",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-10-17",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-10-18",
+      "original": "UC11- ADMINISTRAÇÃO DE CONTAS A PAGAR",
+      "kind": "senac",
+      "title": "UC11 · Administração de contas a pagar",
+      "ucCode": "UC11",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-10-19",
+      "original": "ATIVIDADE PRÁTICA 166",
+      "kind": "hospital",
+      "title": "Atividade prática 166",
+      "activityNumber": 166,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-10-20",
+      "original": "ATIVIDADE PRÁTICA 167",
+      "kind": "hospital",
+      "title": "Atividade prática 167",
+      "activityNumber": 167,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-10-21",
+      "original": "ATIVIDADE PRÁTICA 168",
+      "kind": "hospital",
+      "title": "Atividade prática 168",
+      "activityNumber": 168,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-10-22",
+      "original": "ATIVIDADE PRÁTICA 169",
+      "kind": "hospital",
+      "title": "Atividade prática 169",
+      "activityNumber": 169,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-10-23",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-10-24",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-10-25",
+      "original": "UC11- ADMINISTRAÇÃO DE CONTAS A PAGAR",
+      "kind": "senac",
+      "title": "UC11 · Administração de contas a pagar",
+      "ucCode": "UC11",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-10-26",
+      "original": "ATIVIDADE PRÁTICA 170",
+      "kind": "hospital",
+      "title": "Atividade prática 170",
+      "activityNumber": 170,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-10-27",
+      "original": "ATIVIDADE PRÁTICA 171",
+      "kind": "hospital",
+      "title": "Atividade prática 171",
+      "activityNumber": 171,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-10-28",
+      "original": "ATIVIDADE PRÁTICA 172",
+      "kind": "hospital",
+      "title": "Atividade prática 172",
+      "activityNumber": 172,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-10-29",
+      "original": "ATIVIDADE PRÁTICA 173",
+      "kind": "hospital",
+      "title": "Atividade prática 173",
+      "activityNumber": 173,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-10-30",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-10-31",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-11-01",
+      "original": "UC9- PI- ASSISTENTE ADMINISTRATIVO",
+      "kind": "senac",
+      "title": "UC9 · PI – Assistente administrativo",
+      "ucCode": "UC9",
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-11-02",
+      "original": "FERIADO : FINADOS",
+      "kind": "holiday",
+      "title": "Finados"
+    },
+    {
+      "date": "2027-11-03",
+      "original": "ATIVIDADE PRÁTICA 174",
+      "kind": "hospital",
+      "title": "Atividade prática 174",
+      "activityNumber": 174,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-11-04",
+      "original": "ATIVIDADE PRÁTICA 175",
+      "kind": "hospital",
+      "title": "Atividade prática 175",
+      "activityNumber": 175,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-11-05",
+      "original": "ATIVIDADE PRÁTICA 176",
+      "kind": "hospital",
+      "title": "Atividade prática 176",
+      "activityNumber": 176,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-11-06",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-11-07",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-11-08",
+      "original": "ATIVIDADE PRÁTICA 177",
+      "kind": "hospital",
+      "title": "Atividade prática 177",
+      "activityNumber": 177,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-11-09",
+      "original": "ATIVIDADE PRÁTICA 178",
+      "kind": "hospital",
+      "title": "Atividade prática 178",
+      "activityNumber": 178,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-11-10",
+      "original": "ATIVIDADE PRÁTICA 179",
+      "kind": "hospital",
+      "title": "Atividade prática 179",
+      "activityNumber": 179,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-11-11",
+      "original": "ATIVIDADE PRÁTICA 180",
+      "kind": "hospital",
+      "title": "Atividade prática 180",
+      "activityNumber": 180,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-11-12",
+      "original": "ATIVIDADE PRÁTICA 181",
+      "kind": "hospital",
+      "title": "Atividade prática 181",
+      "activityNumber": 181,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-11-13",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-11-14",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-11-15",
+      "original": "FERIADO: PROCLAMAÇÃO DA REPUBLICA",
+      "kind": "holiday",
+      "title": "Proclamação da República"
+    },
+    {
+      "date": "2027-11-16",
+      "original": "ATIVIDADE PRÁTICA 182",
+      "kind": "hospital",
+      "title": "Atividade prática 182",
+      "activityNumber": 182,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-11-17",
+      "original": "ATIVIDADE PRÁTICA 183",
+      "kind": "hospital",
+      "title": "Atividade prática 183",
+      "activityNumber": 183,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-11-18",
+      "original": "ATIVIDADE PRÁTICA 184",
+      "kind": "hospital",
+      "title": "Atividade prática 184",
+      "activityNumber": 184,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-11-19",
+      "original": "ATIVIDADE PRÁTICA 185",
+      "kind": "hospital",
+      "title": "Atividade prática 185",
+      "activityNumber": 185,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-11-20",
+      "original": "FERIADO : CONSCIÊNCIA NEGRA",
+      "kind": "holiday",
+      "title": "Consciência Negra"
+    },
+    {
+      "date": "2027-11-21",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-11-22",
+      "original": "ATIVIDADE PRÁTICA 186",
+      "kind": "hospital",
+      "title": "Atividade prática 186",
+      "activityNumber": 186,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-11-23",
+      "original": "ATIVIDADE PRÁTICA 187",
+      "kind": "hospital",
+      "title": "Atividade prática 187",
+      "activityNumber": 187,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-11-24",
+      "original": "ATIVIDADE PRÁTICA 188",
+      "kind": "hospital",
+      "title": "Atividade prática 188",
+      "activityNumber": 188,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-11-25",
+      "original": "ATIVIDADE PRÁTICA 189",
+      "kind": "hospital",
+      "title": "Atividade prática 189",
+      "activityNumber": 189,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-11-26",
+      "original": "ATIVIDADE PRÁTICA 190",
+      "kind": "hospital",
+      "title": "Atividade prática 190",
+      "activityNumber": 190,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-11-27",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-11-28",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-11-29",
+      "original": "ATIVIDADE PRÁTICA 191",
+      "kind": "hospital",
+      "title": "Atividade prática 191",
+      "activityNumber": 191,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-11-30",
+      "original": "ATIVIDADE PRÁTICA 192",
+      "kind": "hospital",
+      "title": "Atividade prática 192",
+      "activityNumber": 192,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-12-01",
+      "original": "ATIVIDADE PRÁTICA 193",
+      "kind": "hospital",
+      "title": "Atividade prática 193",
+      "activityNumber": 193,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-12-02",
+      "original": "ATIVIDADE PRÁTICA 194",
+      "kind": "hospital",
+      "title": "Atividade prática 194",
+      "activityNumber": 194,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-12-03",
+      "original": "ATIVIDADE PRÁTICA 195",
+      "kind": "hospital",
+      "title": "Atividade prática 195",
+      "activityNumber": 195,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-12-04",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-12-05",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-12-06",
+      "original": "ATIVIDADE PRÁTICA 196",
+      "kind": "hospital",
+      "title": "Atividade prática 196",
+      "activityNumber": 196,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-12-07",
+      "original": "ATIVIDADE PRÁTICA 197",
+      "kind": "hospital",
+      "title": "Atividade prática 197",
+      "activityNumber": 197,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-12-08",
+      "original": "ATIVIDADE PRÁTICA 198",
+      "kind": "hospital",
+      "title": "Atividade prática 198",
+      "activityNumber": 198,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-12-09",
+      "original": "ATIVIDADE PRÁTICA 199",
+      "kind": "hospital",
+      "title": "Atividade prática 199",
+      "activityNumber": 199,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-12-10",
+      "original": "ATIVIDADE PRÁTICA 200",
+      "kind": "hospital",
+      "title": "Atividade prática 200",
+      "activityNumber": 200,
+      "startTime": "13:00",
+      "endTime": "17:00"
+    },
+    {
+      "date": "2027-12-11",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    },
+    {
+      "date": "2027-12-12",
+      "original": "NÃO HÁ ATIVIDADES",
+      "kind": "free",
+      "title": "Sem atividades"
+    }
+  ]
+}

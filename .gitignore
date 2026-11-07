@@ -1,0 +1,53 @@
+# Dependências, builds e caches
+node_modules/
+/.next/
+/out/
+/.turbo/
+/.cache/
+*.tsbuildinfo
+/next-env.d.ts
+
+# Configuração local e credenciais
+/.wrangler/
+/wrangler.jsonc
+.env*
+!.env.example
+.dev.vars*
+!.dev.vars.example
+.npmrc
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+credentials.json
+
+# Dados privados, fontes locais e backups
+/.local/
+/.push/
+/calendario-administrativo.pdf
+/Especificacao-Rotina-Aprendiz-v1.md
+*.sqlite*
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+*.sql
+!/worker/migrations/*.sql
+jour-????-??-??.json
+rotina-aprendiz-????-??-??.json
+*backup*.json
+backups/
+
+# Testes, logs e estudos temporários
+/.work/
+/tmp/
+/coverage/
+/test-results/
+/playwright-report/
+/screenshots/
+*.log
+*.zip
+.DS_Store
+Thumbs.db

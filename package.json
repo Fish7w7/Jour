@@ -1,0 +1,38 @@
+{
+  "name": "jour",
+  "version": "1.8.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --webpack",
+    "build": "next build --webpack && node scripts/build-offline.mjs",
+    "preview": "node scripts/preview.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "node --disable-warning=ExperimentalWarning --test tests/*.test.mjs",
+    "cf:dev": "wrangler dev --local --test-scheduled",
+    "cf:migrate:local": "wrangler d1 migrations apply DB --local",
+    "cf:migrate:remote": "wrangler d1 migrations apply DB --remote",
+    "cf:deploy": "npm run build && wrangler deploy",
+    "cf:test": "node --disable-warning=ExperimentalWarning scripts/test-cloudflare.mjs"
+  },
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "dependencies": {
+    "@block65/webcrypto-web-push": "2.0.0",
+    "next": "16.4.5",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "web-push": "3.6.7"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "5.20261104.1",
+    "@tailwindcss/postcss": "4.3.4",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "tailwindcss": "4.3.4",
+    "typescript": "^5.9.0",
+    "wrangler": "4.158.0"
+  },
+  "type": "module"
+}
