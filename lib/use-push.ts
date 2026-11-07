@@ -2,9 +2,9 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { defaultPreferences, type Preferences } from "./schedule";
-import { pushPlan } from "./notifications";
+import { object, pushPlan } from "./notifications";
 import { readPushSnapshot, setPushDevice, type PushDevice } from "./storage";
-import type { usePwa } from "./use-pwa";
+import { isAppleMobile, type usePwa } from "./use-pwa";
 
 type Status = "loading" | "off" | "on" | "pending" | "revoking" | "expired";
 type Config = { publicKey: string } | null;
@@ -94,8 +94,7 @@ export function usePush({ online, installed, registration }: Pwa, preferences: P
   }, [config, registration]);
 
   useEffect(() => {
-    const ios = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
-    if (ios && !installed) setSupport("install");
+    if (isAppleMobile() && !installed) setSupport("install");
     else if (!window.isSecureContext || !("Notification" in window) || !("PushManager" in window) || !("serviceWorker" in navigator)) setSupport("unsupported");
     else setSupport("supported");
     if (typeof Notification !== "undefined") setPermission(Notification.permission);
@@ -107,9 +106,14 @@ export function usePush({ online, installed, registration }: Pwa, preferences: P
     async function load() {
       try {
         const response = await api("config");
-        const data = response.ok ? await response.json() : null;
-        if (active) setConfig((current) => data?.available && typeof data.publicKey === "string" && /^[\w-]{87}$/.test(data.publicKey)
-          ? (current?.publicKey === data.publicKey ? current : { publicKey: data.publicKey }) : null);
+        const data: unknown = response.ok ? await response.json() : null;
+        if (!active) return;
+        if (!object(data) || !data.available || typeof data.publicKey !== "string" || !/^[\w-]{87}$/.test(data.publicKey)) {
+          setConfig(null);
+          return;
+        }
+        const { publicKey } = data;
+        setConfig((current) => current?.publicKey === publicKey ? current : { publicKey });
       } catch { if (active) setConfig(null); }
     }
     void load();

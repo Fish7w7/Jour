@@ -4,12 +4,14 @@ import { themes, type Appearance } from "../lib/appearance";
 import { formatDate } from "../lib/dates";
 import { schedule, type ScheduleKind } from "../lib/schedule";
 import type { usePwa } from "../lib/use-pwa";
+import type { usePush } from "../lib/use-push";
 import { AppearanceSettings } from "./appearance-settings";
 import { Icon } from "./icon";
 import { InstallGuide } from "./install-guide";
 import { Sheet } from "./sheets";
 
 type Pwa = ReturnType<typeof usePwa>;
+type Push = ReturnType<typeof usePush>;
 export type Release = { title: string; notes: string[] };
 type IconName = ComponentProps<typeof Icon>["name"];
 const version = appPackage.version;
@@ -22,6 +24,15 @@ const pages = {
 } as const;
 type Page = keyof typeof pages;
 
+function notificationSummary({ status, support, configLoading, configured }: Push) {
+  if (status === "on") return "Ativas";
+  if (status === "pending" || status === "revoking") return "Pendentes";
+  if (support === "install") return "Requer instalação";
+  if (support === "unsupported" || (!configLoading && !configured)) return "Indisponíveis";
+  if (status === "loading" || configLoading) return "Verificando";
+  return status === "expired" ? "Inscrição expirada" : "Desativadas";
+}
+
 function SettingsRow({ page, detail, onClick }: { page: Page; detail?: string; onClick: () => void }) {
   const { title, icon, tint } = pages[page];
   return <li><button type="button" className="settings-row" id={`settings-link-${page}`} onClick={onClick}>
@@ -31,10 +42,10 @@ function SettingsRow({ page, detail, onClick }: { page: Page; detail?: string; o
   </button></li>;
 }
 
-export function Settings({ appearance, previewKind, onAppearancePreview, onAppearanceSave, pending, pwa, pushSummary, notifications, backup, error, onClose, releases }: {
+export function Settings({ appearance, previewKind, onAppearancePreview, onAppearanceSave, pending, pwa, push, notifications, backup, error, onClose, releases }: {
   appearance: Appearance; previewKind: ScheduleKind; onAppearancePreview: (value?: Appearance) => void;
   onAppearanceSave: (value: Appearance) => Promise<boolean>; pending: boolean;
-  pwa: Pwa; pushSummary: string; notifications: ReactNode; backup: ReactNode; error: string; onClose: () => void; releases: Release[];
+  pwa: Pwa; push: Push; notifications: ReactNode; backup: ReactNode; error: string; onClose: () => void; releases: Release[];
 }) {
   const [page, setPage] = useState<Page>();
   const [lastPage, setLastPage] = useState<Page>();
@@ -52,7 +63,7 @@ export function Settings({ appearance, previewKind, onAppearancePreview, onAppea
           <h3 id="settings-preferences" className="settings-caption">Preferências</h3>
           <ul className="settings-card">
             <SettingsRow page="appearance" detail={themes[appearance.theme]} onClick={() => open("appearance")} />
-            <SettingsRow page="notifications" detail={pushSummary} onClick={() => open("notifications")} />
+            <SettingsRow page="notifications" detail={notificationSummary(push)} onClick={() => open("notifications")} />
           </ul>
         </section>
         <section className="settings-group" aria-labelledby="settings-app">

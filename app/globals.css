@@ -331,7 +331,8 @@ progress::-moz-progress-bar { background: var(--jour-blue); border-radius: 99rem
 .calendar-legend li { display: inline-flex; gap: .27rem; align-items: center; }
 .calendar-period-fields { grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); }
 .summary { grid-area: day; display: grid; align-content: start; gap: .35rem; box-shadow: none; }
-.day-overview, .day-details { display: grid; min-width: 0; gap: .32rem; }
+.day-overview, .day-details { display: grid; min-width: 0; }
+.day-overview { gap: .32rem; }
 .day-details { gap: .9rem; }
 .day-overview :is(h2, h3) { font-size: 1.22rem; line-height: 1.22; font-weight: 750; letter-spacing: -.028em; overflow-wrap: anywhere; }
 .summary-date { display: flex; flex-wrap: wrap; align-items: center; gap: .35rem; color: var(--muted); font-size: .85rem; margin-bottom: .16rem; }
@@ -375,9 +376,6 @@ progress::-moz-progress-bar { background: var(--jour-blue); border-radius: 99rem
 .weekly-free { color: var(--free); font-size: .875rem; }
 .weekly-extra { font-size: .85rem; }
 .weekly-empty { padding: 0 1rem .65rem; }
-@media (max-width: 350px) {
-  .weekly-event { grid-template-columns: minmax(0, 1fr); }
-}
 .muted { color: var(--muted); font-size: .875rem; }
 .dates-layout { grid-template-areas: "contract" "birthdays" "upcoming"; gap: 1.25rem; }
 .contract-overview {
@@ -501,15 +499,7 @@ html:has(.sheet[open]) { overflow: hidden; }
 }
 /* Keep padding off the native input so iOS WebKit does not add it to its width. */
 .date-reminder-details input[type="time"] { display: block; padding: 0; border: 0; background: transparent; }
-@media (max-width: 350px) {
-  .date-reminder-details label { grid-template-columns: minmax(0, 1fr); }
-  .date-reminder-time { width: 7rem; max-width: 100%; }
-}
 .date-save { min-height: 46px; margin-top: .1rem; }
-@media (prefers-reduced-motion: no-preference) {
-  .date-switch-track { transition: background-color .15s ease, border-color .15s ease; }
-  .date-switch-track::before { transition: transform .15s ease; }
-}
 .sheet.settings-sheet { inset: 0; width: 100%; height: 100dvh; max-height: none; border: 0; border-radius: 0; overflow: hidden; background: var(--bg); }
 .settings-sheet .sheet-content { display: grid; grid-template-rows: auto minmax(0, 1fr); height: 100%; padding: 0; }
 .settings-sheet .sheet-heading {
@@ -631,6 +621,8 @@ html:has(.sheet[open]) { overflow: hidden; }
 .offline-pill { color: var(--muted); display: flex; align-items: center; gap: .25rem; font-size: .8rem; font-weight: 650; }
 @keyframes sheet-in { from { transform: translateY(1.7rem); opacity: .6; } to { transform: translateY(0); opacity: 1; } }
 @media (prefers-reduced-motion: no-preference) {
+  .date-switch-track { transition: background-color .15s ease, border-color .15s ease; }
+  .date-switch-track::before { transition: transform .15s ease; }
   .date-reveal { animation: date-reveal .16s ease-out; }
   .settings-content { animation: settings-enter .17s ease-out; }
   .settings-row { transition: background-color .15s ease-out; }
@@ -641,13 +633,12 @@ html:has(.sheet[open]) { overflow: hidden; }
 @keyframes settings-enter { from { opacity: .55; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes date-reveal { from { opacity: .72; } to { opacity: 1; } }
 @media (hover: hover) {
-  .icon-button:hover, .text-button:hover, .week-day:hover:not([aria-pressed="true"], [aria-current="date"]), button.info-row:hover { background: var(--muted-surface); }
-  .hero-action:hover { text-decoration: underline; }
-  .next-appointment:hover { background: var(--muted-surface); }
-  .settings-row:hover { background: var(--muted-surface); }
-  .weekly-entry[data-selected="false"] .weekly-open:hover, .calendar-period:hover { background: var(--muted-surface); }
-  .calendar-day:hover:not([aria-pressed="true"]) .calendar-number { background: var(--muted-surface); }
+  .icon-button:hover, .text-button:hover, .week-day:hover:not([aria-pressed="true"], [aria-current="date"]),
+  button.info-row:hover, .next-appointment:hover, .settings-row:hover,
+  .weekly-entry[data-selected="false"] .weekly-open:hover, .calendar-period:hover,
+  .calendar-day:hover:not([aria-pressed="true"]) .calendar-number,
   .birthday-row:hover, .important-date-row:hover { background: var(--muted-surface); }
+  .hero-action:hover { text-decoration: underline; }
 }
 @media (min-width: 48rem) {
   .app-header, .app-main { padding-inline: max(2rem, env(safe-area-inset-left)) max(2rem, env(safe-area-inset-right)); }
@@ -676,6 +667,9 @@ html:has(.sheet[open]) { overflow: hidden; }
   .hero { padding-inline: .85rem; }
   .week-strip { margin-inline: -.3rem; }
   .info-row { gap: .45rem; padding-inline: .65rem; }
+  .weekly-event { grid-template-columns: minmax(0, 1fr); }
+  .date-reminder-details label { grid-template-columns: minmax(0, 1fr); }
+  .date-reminder-time { width: 7rem; max-width: 100%; }
   .settings-block .reminder-rule { grid-template-columns: minmax(0, 1fr) minmax(0, 6.2rem); }
   .birthday-row, .important-date-row { grid-template-columns: 2.05rem minmax(0, 1fr) 15px; column-gap: .45rem; row-gap: .12rem; }
   .birthday-row > :first-child, .important-date-row > :first-child { grid-row: 1 / 3; }

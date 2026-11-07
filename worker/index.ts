@@ -24,7 +24,7 @@ async function hash(value: string) {
   return Array.from(new Uint8Array(buffer), (byte) => byte.toString(16).padStart(2, "0")).join("");
 }
 
-function config(env: Env) {
+function readPushConfig(env: Env) {
   const { APP_ORIGIN, VAPID_SUBJECT, VAPID_PUBLIC_KEY, VAPID_PRIVATE_KEY } = env;
   const url = URL.parse(APP_ORIGIN ?? "");
   if (!url || url.origin !== APP_ORIGIN || (url.protocol !== "https:" &&
@@ -72,6 +72,30 @@ async function validPoint(subscription: BrowserSubscription) {
   } catch { return false; }
 }
 
+async function saveDevice(request: Request, store: ReturnType<typeof d1Store>, id: string, now: number) {
+  if (!request.headers.get("Content-Type")?.startsWith("application/json")) return reply(415);
+  let body: unknown;
+  try { body = await readBody(request); } catch { return reply(400); }
+  if (!object(body) || typeof body.revision !== "number" || !Number.isSafeInteger(body.revision) || body.revision < 0) return reply(400);
+  const subscription = subscriptionShape(body.subscription);
+  const plan = parsePlan(body.plan);
+  if (!subscription || !plan) return reply(400);
+  const encodedSubscription = JSON.stringify(subscription);
+  const encodedPlan = JSON.stringify(plan);
+  const fingerprint = await hash(encodedSubscription + "\n" + encodedPlan);
+  const current = await store.get(id);
+  if (current && (current.revision > body.revision ||
+      (current.revision === body.revision && current.fingerprint !== fingerprint))) return reply(409);
+  if (current?.fingerprint === fingerprint && current.calendar_version === calendarVersion) {
+    if (current.revision === body.revision && now - current.last_seen < day) return reply(204);
+    if (await store.syncUnchanged(id, fingerprint, body.revision, now)) return reply(204);
+  }
+  if (!await validPoint(subscription)) return reply(400);
+  const activeSince = current?.fingerprint === fingerprint ? current.active_since : now;
+  const horizon = buildHorizon(plan, id, now, activeSince);
+  return reply(await store.save(id, subscription.endpoint, encodedSubscription, encodedPlan, fingerprint, body.revision, now, horizon));
+}
+
 export function createWorker({ provider = fetch, clock = Date.now } = {}) {
   async function deliver(subscription: BrowserSubscription, message: PushMessage, ttl: number, vapid: VapidKeys) {
     try {
@@ -91,8 +115,25 @@ export function createWorker({ provider = fetch, clock = Date.now } = {}) {
     }
   }
 
-  async function handle(request: Request, env: Env, path: string) {
-    const setup = config(env);
+  async function sendTest(store: ReturnType<typeof d1Store>, id: string, now: number, vapid: VapidKeys) {
+    const device = await store.reserveTest(id, now);
+    if (!device) {
+      const current = await store.get(id);
+      return reply(current && current.last_seen >= now - 365 * day ? 429 : 410);
+    }
+
+    const { status } = await deliver(JSON.parse(device.subscription),
+      { id: "test:" + now, title: "Notificação de teste", body: "O Jour está conectado neste dispositivo." },
+      60, vapid);
+    if (status === 404 || status === 410) {
+      await store.revoke(id, now, device.endpoint);
+      return reply(410);
+    }
+    return reply(status >= 200 && status < 300 ? 204 : 502);
+  }
+
+  async function handlePush(request: Request, env: Env, path: string) {
+    const setup = readPushConfig(env);
     if (path === "/api/push/config" && request.method === "GET") {
       return setup ? reply(200, { available: true, publicKey: setup.vapid.publicKey }) : reply(503, { available: false });
     }
@@ -109,55 +150,24 @@ export function createWorker({ provider = fetch, clock = Date.now } = {}) {
     const id = await hash(token);
     const store = d1Store(env.DB);
     const now = clock();
-    if (isTest) {
-      const device = await store.reserveTest(id, now);
-      if (!device) {
-        const current = await store.get(id);
-        return reply(current && current.last_seen >= now - 365 * day ? 429 : 410);
-      }
-      const { status } = await deliver(JSON.parse(device.subscription),
-        { id: "test:" + now, title: "Notificação de teste", body: "O Jour está conectado neste dispositivo." },
-        60, setup.vapid);
-      if (status === 404 || status === 410) await store.revoke(id, now, device.endpoint);
-      return reply(status >= 200 && status < 300 ? 204 : status === 404 || status === 410 ? 410 : 502);
-    }
+    if (isTest) return sendTest(store, id, now, setup.vapid);
     if (request.method === "DELETE") {
       await store.revoke(id, now);
       return reply(204);
     }
-    if (!request.headers.get("Content-Type")?.startsWith("application/json")) return reply(415);
-    let body: unknown;
-    try { body = await readBody(request); } catch { return reply(400); }
-    if (!object(body) || typeof body.revision !== "number" || !Number.isSafeInteger(body.revision) || body.revision < 0) return reply(400);
-    const subscription = subscriptionShape(body.subscription);
-    const plan = parsePlan(body.plan);
-    if (!subscription || !plan) return reply(400);
-    const encodedSubscription = JSON.stringify(subscription);
-    const encodedPlan = JSON.stringify(plan);
-    const fingerprint = await hash(encodedSubscription + "\n" + encodedPlan);
-    const current = await store.get(id);
-    if (current && (current.revision > body.revision ||
-        (current.revision === body.revision && current.fingerprint !== fingerprint))) return reply(409);
-    if (current?.fingerprint === fingerprint && current.calendar_version === calendarVersion) {
-      if (current.revision === body.revision && now - current.last_seen < day) return reply(204);
-      if (await store.syncUnchanged(id, fingerprint, body.revision, now)) return reply(204);
-    }
-    if (!await validPoint(subscription)) return reply(400);
-    const activeSince = current?.fingerprint === fingerprint ? current.active_since : now;
-    const horizon = buildHorizon(plan, id, now, activeSince);
-    return reply(await store.save(id, subscription.endpoint, encodedSubscription, encodedPlan, fingerprint, body.revision, now, horizon));
+    return saveDevice(request, store, id, now);
   }
 
   return {
     async fetch(request: Request, env: Env) {
       const path = new URL(request.url).pathname;
       if (!path.startsWith("/api/push/")) return env.ASSETS.fetch(request);
-      try { return await handle(request, env, path); }
+      try { return await handlePush(request, env, path); }
       catch { console.error("Falha na API de notificações."); return reply(500); }
     },
     async scheduled(controller: ScheduledController, env: Env) {
       controller.noRetry();
-      const setup = config(env);
+      const setup = readPushConfig(env);
       if (!setup) return;
       const { vapid } = setup;
       const now = Math.max(clock(), controller.scheduledTime);

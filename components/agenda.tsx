@@ -148,49 +148,65 @@ export function Agenda({ initialToday, releases }: { initialToday: string; relea
   const blocked = !ready || saving;
   const closeOverlay = () => { if (!savingRef.current) setOverlay(undefined); };
 
-  let sheetTitle = "";
-  let sheetContent: React.ReactNode;
-  if (overlay?.kind === "install") {
-    sheetTitle = "Como instalar";
-    sheetContent = <InstallGuide pwa={pwa} />;
-  } else if (overlay?.kind === "calendar-period") {
-    sheetTitle = "Escolher mês e ano";
-    sheetContent = <CalendarPeriodForm selected={selectedCalendar} onSelect={(date) => {
-      setCalendarDate(date);
-      closeOverlay();
-    }} />;
-  } else if (overlay?.kind === "details" || overlay?.kind === "override") {
-    const { date } = overlay;
-    const entry = lookup(date);
-    if (overlay.kind === "details") {
-      sheetTitle = "Detalhes do dia";
-      sheetContent = <Details entry={entry} {...getDayDates(date)} onEdit={() => setOverlay({ kind: "override", date })} />;
-    } else {
-      sheetTitle = entry.personal ? "Editar ajuste pessoal" : "Novo ajuste pessoal";
-      sheetContent = <OverrideForm entry={entry} pending={blocked}
-        onSave={(value) => void persist((current) => ({ ...current, overrides: { ...current.overrides, [date]: value } }))}
-        onDelete={() => void persist((current) => {
-          const overrides = { ...current.overrides };
-          delete overrides[date];
-          return { ...current, overrides };
-        })} />;
+  function getSheet() {
+    switch (overlay?.kind) {
+      case "install":
+        return { title: "Como instalar", content: <InstallGuide pwa={pwa} /> };
+      case "calendar-period":
+        return {
+          title: "Escolher mês e ano",
+          content: <CalendarPeriodForm selected={selectedCalendar} onSelect={(date) => {
+            setCalendarDate(date);
+            closeOverlay();
+          }} />,
+        };
+      case "details": {
+        const { date } = overlay;
+        return {
+          title: "Detalhes do dia",
+          content: <Details entry={lookup(date)} {...getDayDates(date)}
+            onEdit={() => setOverlay({ kind: "override", date })} />,
+        };
+      }
+      case "override": {
+        const { date } = overlay;
+        const entry = lookup(date);
+        return {
+          title: entry.personal ? "Editar ajuste pessoal" : "Novo ajuste pessoal",
+          content: <OverrideForm entry={entry} pending={blocked}
+            onSave={(value) => void persist((current) => ({ ...current, overrides: { ...current.overrides, [date]: value } }))}
+            onDelete={() => void persist((current) => {
+              const overrides = { ...current.overrides };
+              delete overrides[date];
+              return { ...current, overrides };
+            })} />,
+        };
+      }
+      case "birthday": {
+        const { birthday } = overlay;
+        return {
+          title: birthday ? "Editar aniversário" : "Novo aniversário",
+          content: <BirthdayForm birthday={birthday} today={today} pending={blocked}
+            onSave={(value) => void persist((current) => ({
+              ...current, birthdays: [...current.birthdays.filter(({ id }) => id !== value.id), value],
+            }))}
+            onDelete={() => void persist((current) => ({
+              ...current, birthdays: current.birthdays.filter(({ id }) => id !== birthday?.id),
+            }))} />,
+        };
+      }
+      case "important": {
+        const { title, date } = overlay;
+        return {
+          title,
+          content: <DateForm date={date} today={today} pending={blocked} preference={preferences.dates[title] ?? defaultDatePreference}
+            onSave={(value) => void persist((current) => ({ ...current, dates: { ...current.dates, [title]: value } }))} />,
+        };
+      }
     }
-  } else if (overlay?.kind === "birthday") {
-    const birthday = overlay.birthday;
-    sheetTitle = birthday ? "Editar aniversário" : "Novo aniversário";
-    sheetContent = <BirthdayForm birthday={birthday} today={today} pending={blocked}
-      onSave={(value) => void persist((current) => ({
-        ...current, birthdays: [...current.birthdays.filter(({ id }) => id !== value.id), value],
-      }))}
-      onDelete={() => void persist((current) => ({
-        ...current, birthdays: current.birthdays.filter(({ id }) => id !== birthday?.id),
-      }))} />;
-  } else if (overlay?.kind === "important") {
-    const { title } = overlay;
-    sheetTitle = title;
-    sheetContent = <DateForm date={overlay.date} today={today} pending={blocked} preference={preferences.dates[title] ?? defaultDatePreference}
-      onSave={(value) => void persist((current) => ({ ...current, dates: { ...current.dates, [title]: value } }))} />;
   }
+
+  const sheet = getSheet();
 
   return <div className="app-frame">
     <header className="app-header">
@@ -279,10 +295,7 @@ export function Agenda({ initialToday, releases }: { initialToday: string; relea
       </div>
     </nav>
     {overlay?.kind === "settings" ? <Settings appearance={appearance} previewKind={heroEntry.event.kind}
-      onAppearancePreview={setAppearancePreview} pending={blocked || push.busy} pwa={pwa} releases={releases}
-      pushSummary={push.status === "on" ? "Ativas" : push.status === "pending" || push.status === "revoking" ? "Pendentes" :
-        push.support === "install" ? "Requer instalação" : push.support === "unsupported" || (!push.configLoading && !push.configured) ? "Indisponíveis" :
-        push.status === "loading" || push.configLoading ? "Verificando" : push.status === "expired" ? "Inscrição expirada" : "Desativadas"}
+      onAppearancePreview={setAppearancePreview} pending={blocked || push.busy} pwa={pwa} push={push} releases={releases}
       error={storageError} onClose={closeOverlay}
       onAppearanceSave={(value) => persist((current) => ({ ...current, ...value }), false)}
       notifications={<NotificationPanel push={push} online={pwa.online} pending={blocked} settings={preferences.notifications}
@@ -290,10 +303,10 @@ export function Agenda({ initialToday, releases }: { initialToday: string; relea
           ...current, notifications: { ...(current.notifications ?? notificationDefaults), ...updates },
         }), false)} />}
       backup={<BackupPanel today={today} preferences={preferences} pending={blocked}
-        onImport={(imported) => persist(() => imported, false)} />} /> : overlay && <Sheet title={capitalize(sheetTitle)}
-      variant={overlay.kind === "important" ? "important-date" : undefined} onClose={closeOverlay}>
+        onImport={(imported) => persist(() => imported, false)} />} /> : sheet && <Sheet title={capitalize(sheet.title)}
+      variant={overlay?.kind === "important" ? "important-date" : undefined} onClose={closeOverlay}>
       {storageError && <p role="alert" className="storage-alert">{storageError}</p>}
-      {sheetContent}
+      {sheet.content}
     </Sheet>}
   </div>;
 }

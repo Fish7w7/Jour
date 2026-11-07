@@ -7,6 +7,10 @@ import { Icon } from "./icon";
 import { CalendarDayDates } from "./calendar-views";
 import type { Entry } from "./schedule-views";
 
+const monthFormat = new Intl.DateTimeFormat("pt-BR", { month: "short", timeZone: "UTC" });
+const birthdayMonths = Array.from({ length: 12 }, (_, index) =>
+  capitalize(monthFormat.format(new Date(Date.UTC(2000, index, 1))).replace(".", "")));
+
 export function Sheet({ title, children, onClose, settings, onBack, returnFocusId, variant }: {
   title: string; children: ReactNode; onClose: () => void; settings?: boolean; onBack?: () => void; returnFocusId?: string;
   variant?: "important-date";
@@ -80,15 +84,19 @@ export function OverrideForm({ entry, onSave, onDelete, pending }: {
   const [kind, setKind] = useState(event.kind);
   const [error, setError] = useState("");
   const timed = kind === "hospital" || kind === "senac";
-  function submit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    const fields = new FormData(event.currentTarget);
+  function submit(formEvent: FormEvent<HTMLFormElement>) {
+    formEvent.preventDefault();
+    const fields = new FormData(formEvent.currentTarget);
     const title = String(fields.get("title")).trim();
     const notes = String(fields.get("notes")).trim();
     const startTime = String(fields.get("startTime") ?? "");
     const endTime = String(fields.get("endTime") ?? "");
-    if (!title || (timed && (!startTime || !endTime || startTime >= endTime))) {
-      setError(!title ? "Preencha o título da atividade." : "O horário final precisa ser depois do início.");
+    if (!title) {
+      setError("Preencha o título da atividade.");
+      return;
+    }
+    if (timed && (!startTime || !endTime || startTime >= endTime)) {
+      setError("O horário final precisa ser depois do início.");
       return;
     }
     onSave({ kind, title, ...(notes && { notes }), ...(timed && { startTime, endTime }) });
@@ -141,9 +149,7 @@ export function BirthdayForm({ birthday, today, onSave, onDelete, pending }: {
     <div className="form-columns birthday-fields">
       <label>Dia<input name="day" type="number" inputMode="numeric" required min={1} max={31} defaultValue={birthday?.day} /></label>
       <div className="field"><label htmlFor="birthday-month">Mês</label><select id="birthday-month" name="month" defaultValue={birthday?.month ?? 1}>
-        {Array.from({ length: 12 }, (_, index) => <option key={index} value={index + 1}>
-          {capitalize(new Intl.DateTimeFormat("pt-BR", { month: "short", timeZone: "UTC" }).format(new Date(Date.UTC(2000, index, 1))).replace(".", ""))}
-        </option>)}
+        {birthdayMonths.map((month, index) => <option key={index} value={index + 1}>{month}</option>)}
       </select></div>
       <label>Ano (opcional)<input name="year" type="number" inputMode="numeric" min={1} max={Number(today.slice(0, 4))} defaultValue={birthday?.year} /></label>
     </div>

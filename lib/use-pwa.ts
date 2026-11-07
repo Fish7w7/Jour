@@ -15,6 +15,10 @@ function readyUpdate(registration?: ServiceWorkerRegistration) {
   return registration?.active && worker?.state === "installed" ? worker : null;
 }
 
+export function isAppleMobile() {
+  return /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+}
+
 export function usePwa() {
   const [online, setOnline] = useState(true);
   const [registration, setRegistration] = useState<ServiceWorkerRegistration>();
@@ -36,11 +40,8 @@ export function usePwa() {
   }, [deferredUntil]);
 
   useEffect(() => {
-    let active = true;
-    let stopWatching = () => {};
     const mode = matchMedia("(display-mode: standalone)");
-    const ios = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
-    setInstallPlatform(ios ? "ios" : /Android/i.test(navigator.userAgent) ? "android" : "desktop");
+    setInstallPlatform(isAppleMobile() ? "ios" : /Android/i.test(navigator.userAgent) ? "android" : "desktop");
     try {
       setInviteDismissed(localStorage.getItem(installDismissedKey) === "1");
       const until = Number(localStorage.getItem(updateDeferredKey));
@@ -65,86 +66,107 @@ export function usePwa() {
     window.addEventListener("offline", update);
     window.addEventListener("beforeinstallprompt", onPrompt);
     window.addEventListener("appinstalled", onInstalled);
-    if (process.env.NODE_ENV === "production" && "serviceWorker" in navigator) {
-      const serviceWorker = navigator.serviceWorker;
-      void serviceWorker.getRegistration().then((existing) => existing ?? serviceWorker.register("/sw.js")).then((worker) => {
-        if (!active) return;
-        let observed = new Set<ServiceWorker>();
-        let lastCheck = 0;
-        let checking = false;
-        const check = () => {
-          const workers = new Set([worker.installing, worker.waiting].filter((entry): entry is ServiceWorker => entry !== null));
-          for (const entry of observed) if (!workers.has(entry)) entry.removeEventListener("statechange", check);
-          for (const entry of workers) if (!observed.has(entry)) entry.addEventListener("statechange", check);
-          observed = workers;
-          setWaiting(readyUpdate(worker));
-          if (worker.active?.state === "activated") {
-            setRegistration(worker);
-            setOfflineState("ready");
-          } else if (!worker.active && !worker.installing && !worker.waiting) {
-            setOfflineState("unavailable");
-          }
-        };
-        const onControllerChange = () => {
-          check();
-          const attempt = activation.current;
-          if (!attempt || serviceWorker.controller !== attempt.target) return;
-          window.clearTimeout(attempt.timer);
-          activation.current = null;
-          try { localStorage.removeItem(updateDeferredKey); } catch { /* The update can still finish. */ }
-          window.location.reload();
-        };
-        const checkOnline = () => {
-          check();
-          const now = Date.now();
-          if (!navigator.onLine || document.visibilityState !== "visible" || checking ||
-              (now >= lastCheck && now - lastCheck < checkInterval)) return;
-          lastCheck = now;
-          checking = true;
-          void worker.update().catch(() => {}).finally(() => {
-            checking = false;
-            if (active) check();
-          });
-        };
-        worker.addEventListener("updatefound", check);
-        serviceWorker.addEventListener("controllerchange", onControllerChange);
-        window.addEventListener("online", checkOnline);
-        window.addEventListener("focus", checkOnline);
-        window.addEventListener("pageshow", checkOnline);
-        document.addEventListener("visibilitychange", checkOnline);
-        check();
-        if (worker.active) checkOnline();
-        stopWatching = () => {
-          worker.removeEventListener("updatefound", check);
-          for (const entry of observed) entry.removeEventListener("statechange", check);
-          serviceWorker.removeEventListener("controllerchange", onControllerChange);
-          window.removeEventListener("online", checkOnline);
-          window.removeEventListener("focus", checkOnline);
-          window.removeEventListener("pageshow", checkOnline);
-          document.removeEventListener("visibilitychange", checkOnline);
-        };
-        void navigator.serviceWorker.ready.then((ready) => {
-          if (!active) return;
-          setRegistration(ready);
-          setOfflineState("ready");
-        });
-        if (!worker.active && !worker.installing && !worker.waiting) setOfflineState("unavailable");
-      }).catch(() => { if (active) setOfflineState("unavailable"); });
-    } else {
-      setOfflineState("unavailable");
-    }
     return () => {
-      active = false;
-      stopWatching();
-      if (activation.current) {
-        window.clearTimeout(activation.current.timer);
-        activation.current = null;
-      }
       mode.removeEventListener("change", update);
       window.removeEventListener("online", update);
       window.removeEventListener("offline", update);
       window.removeEventListener("beforeinstallprompt", onPrompt);
       window.removeEventListener("appinstalled", onInstalled);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (process.env.NODE_ENV !== "production" || !("serviceWorker" in navigator)) {
+      setOfflineState("unavailable");
+      return;
+    }
+
+    const serviceWorker = navigator.serviceWorker;
+    let mounted = true;
+    let stopWatching: (() => void) | undefined;
+
+    async function start() {
+      const registration = await serviceWorker.getRegistration() ?? await serviceWorker.register("/sw.js");
+      if (!mounted) return;
+
+      let observedWorkers = new Set<ServiceWorker>();
+      let lastCheck = 0;
+      let checking = false;
+
+      function syncRegistration() {
+        const workers = new Set([registration.installing, registration.waiting]
+          .filter((worker): worker is ServiceWorker => worker !== null));
+        for (const worker of observedWorkers) if (!workers.has(worker)) worker.removeEventListener("statechange", syncRegistration);
+        for (const worker of workers) if (!observedWorkers.has(worker)) worker.addEventListener("statechange", syncRegistration);
+        observedWorkers = workers;
+
+        setWaiting(readyUpdate(registration));
+        if (registration.active?.state === "activated") {
+          setRegistration(registration);
+          setOfflineState("ready");
+        } else if (!registration.active && workers.size === 0) {
+          setOfflineState("unavailable");
+        }
+      }
+
+      function onControllerChange() {
+        syncRegistration();
+        const attempt = activation.current;
+        if (!attempt || serviceWorker.controller !== attempt.target) return;
+        window.clearTimeout(attempt.timer);
+        activation.current = null;
+        try { localStorage.removeItem(updateDeferredKey); } catch { /* The update can still finish. */ }
+        window.location.reload();
+      }
+
+      function checkForUpdate() {
+        syncRegistration();
+        const now = Date.now();
+        if (!navigator.onLine || document.visibilityState !== "visible" || checking ||
+            (now >= lastCheck && now - lastCheck < checkInterval)) return;
+        lastCheck = now;
+        checking = true;
+        void registration.update().catch(() => {}).finally(() => {
+          checking = false;
+          if (mounted) syncRegistration();
+        });
+      }
+
+      registration.addEventListener("updatefound", syncRegistration);
+      serviceWorker.addEventListener("controllerchange", onControllerChange);
+      window.addEventListener("online", checkForUpdate);
+      window.addEventListener("focus", checkForUpdate);
+      window.addEventListener("pageshow", checkForUpdate);
+      document.addEventListener("visibilitychange", checkForUpdate);
+
+      stopWatching = () => {
+        registration.removeEventListener("updatefound", syncRegistration);
+        for (const worker of observedWorkers) worker.removeEventListener("statechange", syncRegistration);
+        serviceWorker.removeEventListener("controllerchange", onControllerChange);
+        window.removeEventListener("online", checkForUpdate);
+        window.removeEventListener("focus", checkForUpdate);
+        window.removeEventListener("pageshow", checkForUpdate);
+        document.removeEventListener("visibilitychange", checkForUpdate);
+      };
+
+      if (registration.active) checkForUpdate();
+      else syncRegistration();
+
+      void serviceWorker.ready.then((ready) => {
+        if (!mounted) return;
+        setRegistration(ready);
+        setOfflineState("ready");
+      });
+    }
+
+    void start().catch(() => { if (mounted) setOfflineState("unavailable"); });
+    return () => {
+      mounted = false;
+      stopWatching?.();
+      if (activation.current) {
+        window.clearTimeout(activation.current.timer);
+        activation.current = null;
+      }
     };
   }, []);
 
